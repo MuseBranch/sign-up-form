@@ -8,6 +8,13 @@ body {
     font-family: 'Space Grotesk', Courier, monospace;
 }
 
+:root {
+    --accent-1: #ae0e72;
+    --accent-2: #e9b100;
+    --dark-green: #21494b;
+    --light-gray: #f3f4f6;
+}
+
 .decoration-area {
     display: flex;
     flex-direction: column;
@@ -42,6 +49,8 @@ img {
 }
 
 .form-area {
+    display: flex;
+    flex-direction: column;
     background-color: lightsalmon;
     height: 100vh;
     width: 60%;
@@ -49,19 +58,21 @@ img {
 
 .form-info {
     padding: 20px 30px;
-    background-color: brown;
-    height: 30vh;
+    background-color: var(--light-gray);
+    height: 40vh;
 }
 
 .form-container {
-    background-color: bisque;
-    height: 30vh;
+    background-color: white;
+    height: 35vh;
     padding: 20px 30px;
+    font-style: var(--accent-1);
 }
 
 .submit-container {
+    background-color: var(--light-gray);
     padding: 20px 30px;
-    height: 20vh;
+    height: 25vh;
 }
 
 fieldset {
