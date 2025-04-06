@@ -1,0 +1,46 @@
+
+
+body {
+    display: flex;
+}
+
+.decoration-area {
+    background-color: aquamarine;
+    background-image: url(turntables-background-medium.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 40%;
+
+}
+
+img {
+    height: 50px;
+}
+
+p {
+    color: whitesmoke;
+}
+
+.logo-container {
+    background-color: rgb(18, 17, 17, 0.7);
+    
+}
+
+.form-area {
+    background-color: lightsalmon;
+    height: 100vh;
+    width: 60%;
+}
+
+.form-info {
+    background-color: brown;
+    height: 30vh;
+}
+
+.form-container {
+    background-color: bisque;
+    height: 400px;
+    width: 100%;
+}
+
+
