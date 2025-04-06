@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-Up Form</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="main-container decoration-area">
@@ -14,29 +14,57 @@
         <p>Music</p>
       </div>
       <div class="image-credits">
-        <p>Photo by <a href="https://unsplash.com/de/@introspectivedsgn?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Erik Mclean</a> auf <a href="https://unsplash.com/de/fotos/lila-vinyl-schallplatte-auf-schwarz-weissem-tisch-QzpgqElvSiA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        <p>
+          Photo by
+          <a
+            href="https://unsplash.com/de/@introspectivedsgn?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Erik Mclean</a
+          >
+          auf
+          <a
+            href="https://unsplash.com/de/fotos/lila-vinyl-schallplatte-auf-schwarz-weissem-tisch-QzpgqElvSiA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Unsplash</a
+          >
         </p>
       </div>
     </div>
     <div class="main-container form-area">
-        <div class="form-info">
-            <h2>This is a model form. Your information is going nowhere.</h2>
-        </div>
+      <div class="form-info">
+        <h2>This is a model form. Your information is going nowhere.</h2>
+      </div>
       <div class="form-container">
         <form action="#">
           <h2>Let's do this</h2>
-          <label for="first-name">First Name</label>
-          <input type="text" id="first-name" />
-          <label for="last-name">Last Name</label>
-          <input type="text" id="last-name" />
-          <label for="email" id="email">Email</label>
-          <input type="email" />
-          <label for="phone-number">Phone Number</label>
-          <input type="text" id="phone-number" />
-          <label for="password">Password</label>
-          <input type="password" />
-          <label for="confirm-password">Confirm password</label>
-          <input type="password" id="confirm-password" />
+          <fieldset class="full-name">
+            <div class="field-container">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" />
+            </div>
+            <div class="field-container">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" />
+            </div>
+          </fieldset>
+          <fieldset class="contact-details">
+            <div class="field-container">
+              <label for="email" id="email">Email</label>
+              <input type="email" />
+            </div>
+            <div class="field-container">
+              <label for="phone-number">Phone Number</label>
+              <input type="text" id="phone-number" />
+            </div>
+          </fieldset>
+          <fieldset class="password">
+            <div class="field-container">
+              <label for="password">Password</label>
+              <input type="password" />
+            </div>
+            <div class="field-container">
+              <label for="confirm-password">Confirm password</label>
+              <input type="password" id="confirm-password" />
+            </div>
+          </fieldset>
         </form>
       </div>
     </div>
