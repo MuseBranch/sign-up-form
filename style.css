@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: aquamarine;
     background-image: url(turntables-background-medium.jpg);
     background-size: cover;
@@ -28,22 +28,35 @@ body {
 
 }
 
-img {
-    height: 50px;
+.upper-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 40vh;
+    width: 100%;
 }
 
-.decoration-area p {
+img {
+    height: 50px;
+    align-self: center;
+}
+
+.decoration-area p, h1 {
     color: whitesmoke;
 }
 
 .image-credits {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     height: 50vh;
-    
 }
+
 
 .logo-container {
     display: flex;
     justify-content: center;
+    gap: 10px;
     background-color: rgb(18, 17, 17, 0.7);
     width: 100%;
 }
@@ -54,17 +67,18 @@ img {
     background-color: lightsalmon;
     height: 100vh;
     width: 60%;
+    flex: 1;
 }
 
 .form-info {
     padding: 20px 30px;
     background-color: var(--light-gray);
-    height: 40vh;
+    flex: 40;
 }
 
 .form-container {
     background-color: white;
-    height: 35vh;
+    flex: 35;
     padding: 20px 30px;
     font-style: var(--accent-1);
 }
@@ -72,7 +86,7 @@ img {
 .submit-container {
     background-color: var(--light-gray);
     padding: 20px 30px;
-    height: 25vh;
+    flex: 25;
 }
 
 fieldset {
