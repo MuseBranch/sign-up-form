@@ -48,15 +48,20 @@ img {
 }
 
 .form-info {
+    padding: 20px 30px;
     background-color: brown;
     height: 30vh;
 }
 
 .form-container {
     background-color: bisque;
-    height: 400px;
-    width: 100%;
-    padding: 30px;
+    height: 30vh;
+    padding: 20px 30px;
+}
+
+.submit-container {
+    padding: 20px 30px;
+    height: 20vh;
 }
 
 fieldset {
