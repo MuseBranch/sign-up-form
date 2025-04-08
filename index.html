@@ -40,31 +40,31 @@
           <fieldset class="full-name">
             <div class="field-container">
               <label for="first-name">First Name</label>
-              <input type="text" id="first-name" />
+              <input type="text" id="first-name" pattern="^[^0-9]*$" title="Please don't enter numbers in this field" required/>
             </div>
             <div class="field-container">
               <label for="last-name">Last Name</label>
-              <input type="text" id="last-name" />
+              <input type="text" id="last-name" pattern="^[^0-9]*$" title="Please don't enter numbers in this field" required/>
             </div>
           </fieldset>
           <fieldset class="contact-details">
             <div class="field-container">
               <label for="email" id="email">Email</label>
-              <input type="email" />
+              <input type="email" required/>
             </div>
             <div class="field-container">
               <label for="phone-number">Phone Number</label>
-              <input type="text" id="phone-number" />
+              <input type="text" id="phone-number" pattern="^\+?[1-9]\d{1,14}$" title="Please enter a valid international phone number"/>
             </div>
           </fieldset>
           <fieldset class="password">
             <div class="field-container">
               <label for="password">Password</label>
-              <input type="password" />
+              <input type="password" minlength="8" required/>
             </div>
             <div class="field-container">
               <label for="confirm-password">Confirm password</label>
-              <input type="password" id="confirm-password" />
+              <input type="password" id="confirm-password" minlength="10" required/>
             </div>
           </fieldset>
         </form>
