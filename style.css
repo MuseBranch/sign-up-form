@@ -32,7 +32,8 @@ a {
     background-image: url(turntables-background-medium.jpg);
     background-size: cover;
     height: 100vh;
-    width: 40%;
+    width: 100%;
+    flex: 4;
 
 }
 
@@ -93,8 +94,8 @@ img {
     flex-direction: column;
     background-color: lightsalmon;
     height: 100vh;
-    width: 60%;
-    flex: 1;
+    width: 100%;
+    flex: 6;
 }
 
 .form-info {
