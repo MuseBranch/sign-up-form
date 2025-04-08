@@ -19,6 +19,10 @@ body {
     --dark: #2d2e2e;
 }
 
+a {
+    color: var(--accent-1);
+}
+
 .decoration-area {
     display: flex;
     flex-direction: column;
@@ -36,7 +40,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    height: 40vh;
+    height: 60vh;
     width: 100%;
 }
 
@@ -62,8 +66,26 @@ img {
     display: flex;
     justify-content: center;
     gap: 10px;
-    background-color: rgb(18, 17, 17, 0.7);
+    background-color: rgb(18, 17, 17, 0.85);
+    padding: 0 15px;
+    border-radius: 5px;
+    width: fit-content;
+    align-self: center;
+}
+
+.image-credits {
     width: 100%;
+    text-align: center;
+}
+
+.image-credits p {
+    background-color: rgb(18, 17, 17, 0.85);
+    margin: 0;
+    padding: 16px 0;
+}
+
+.image-credits p a {
+    color: whitesmoke;
 }
 
 .form-area {
@@ -76,6 +98,9 @@ img {
 }
 
 .form-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     padding: 20px 50px;
     background-color: var(--dark);
     flex: 40;
@@ -157,7 +182,5 @@ button:hover {
     padding: 0 12px;
 }
 
-a {
-    color: var(--accent-1);
-}
+
 
