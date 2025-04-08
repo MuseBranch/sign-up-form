@@ -14,6 +14,8 @@ body {
     --accent-2: #e9b100;
     --dark-green: #21494b;
     --light-gray: #f3f4f6;
+    --blue-focus: #07adc7;
+    --invalid-red: #d4432c;
     --dark: #2d2e2e;
 }
 
@@ -112,9 +114,22 @@ label {
 
 input {
     background-color: #2d2e2e;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 5px;
     height: 1.5rem;
+    color: whitesmoke;
+}
+
+input:invalid {
+    border: 1px solid var(--invalid-red);
+}
+
+input:focus {
+    border: 1px solid var(--blue-focus) !important;
+    box-shadow: 0 0 1px 1px var(--blue-focus);
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
 }
 
 button {
