@@ -44,7 +44,8 @@ img {
 }
 
 .form-container h2 {
-    color: var(--accent-1)
+    color: var(--accent-1);
+    padding: 0 12px;
 }
 
 .image-credits {
@@ -82,12 +83,13 @@ img {
     background-color: #1f1f1f;
     flex: 35;
     padding: 20px 50px;
+    padding-bottom: 30px;
     font-style: var(--accent-1);
 }
 
 .submit-container {
     background-color: var(--dark);
-    padding: 20px 50px;
+    padding: 40px 50px;
     flex: 25;
 }
 
@@ -108,9 +110,31 @@ label {
     font-size: 0.8rem;
 }
 
+input {
+    background-color: #2d2e2e;
+    border: none;
+    border-radius: 5px;
+    height: 1.5rem;
+}
+
 button {
     background-color: var(--accent-2);
     border: none;
     border-radius: 5px;
     height: 2rem;
+    margin: 0 12px;
 }
+
+button:hover {
+    background-color: var(--accent-1);
+    color: whitesmoke;
+}
+
+.form-area p {
+    padding: 0 12px;
+}
+
+a {
+    color: var(--accent-1);
+}
+
